@@ -19,4 +19,4 @@ class Command(BaseCommand):
             except OperationalError:
                 self.stdout.write("Database connection failed.")
                 time.sleep(1)
-            self.stdout.write(self.style.SUCCESS("Database connection successful."))
+        self.stdout.write(self.style.SUCCESS("Database connection successful."))
